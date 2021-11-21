@@ -25,7 +25,7 @@ def custom_important_message_recon(string,path):
 
         match = 0
         for keyword in list_keywords:
-            if re.search(keyword,message_match):
+            if re.search(keyword,message_match,re.I):
                 match += 1
         if match>0:
             tup = (message,match)
@@ -40,6 +40,6 @@ def custom_important_message_recon(string,path):
     print(final_return_list)
     return final_return_list
 
-# path = r"txt_file_upload\WhatsApp Chat with CBS3004_Prof. Nagaraja G.txt"
-# string = "cat fat lab"
-# custom_important_message_recon(string,path)
+path = r"txt_file_upload\WhatsApp Chat with CBS3004_Prof. Nagaraja G.txt"
+string = "cat fat lab"
+custom_important_message_recon(string,path)

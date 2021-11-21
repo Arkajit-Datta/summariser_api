@@ -30,6 +30,7 @@ def summary():
         return jsonify(ret)
 
 @app.route("/important/",methods = ["POST"])
+@cross_origin()
 def important_message_1():
    if request.method == 'POST':
         txt_file = request.files['input_txt']
@@ -44,9 +45,10 @@ def important_message_1():
         return jsonify(ret)  
 
 @app.route("/custom/",methods = ["POST"])
+@cross_origin()
 def important_message():
    if request.method == 'POST':
-        string = request.form("string")
+        string = request.form['string']
         txt_file = request.files['input_txt']
         txt_file_path = os.path.join(upload_path_txt,txt_file.filename)
 
