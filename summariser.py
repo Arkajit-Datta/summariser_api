@@ -6,9 +6,6 @@ def summarise():
     with open("cleaned_text_file.txt",'r', encoding="utf8") as f:
         lines = f.readlines()
     ARTICLE = ""
-    # temp_str = lines[5]
-    # list_temp = temp_str.split(":")
-    # print(list_temp)
     count = 0
     for i in lines:
         temp_str = str(i)
@@ -22,9 +19,6 @@ def summarise():
                 count += 1
             except:
                 pass
-            
-    #print(ARTICLE)
     list_summary = summarizer(ARTICLE, max_length=200, min_length=10, do_sample=False, truncation=True)
-    #print(list_summary[0])
     return list_summary[0]
 #summarise()
