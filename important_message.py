@@ -32,7 +32,7 @@ def important_message_recon(path):
 
         match = 0
         for keyword in lines:
-            if re.search(keyword,message_match):
+            if re.search(keyword,message_match,re.I):
                 match += 1
         if match>0:
             tup = (message,match)
