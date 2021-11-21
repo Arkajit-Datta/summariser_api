@@ -1,0 +1,104 @@
++91 99893 76385: I suggest to go through the following material ( I collected from Internet) for first experiment (Lab) understanding purpose.
++91 99893 76385: Suggest to come with proper Idea to implement the same in your comfortable language using either BFS or DFS.
++91 99893 76385: Similarly refer the "Rich" textbook for "Water Jug Problem". Similar explanation available to understand.
++91 99893 76385: Try to implement any one of the above problem in this week.
++91 99893 76385: as per  your lab schedule.
++91 99893 76385: I hope you are able to view the due dates for each lab Assessment's on vtop.
+Gaurav Poosarla Vit Bbs Batchmate: Yes sir
++91 99893 76385: 1. COVID-19 related Research Topics: Applying ML/DL technique.
+ansmission Methods: Detect mask wore or not? Properly wore or just available?
+Distance following or not?
+ing (Advanced DL): How to process COVID samples with privacy.
+eas:
+ based on image of a class room. It may be any audience scenario.
+ance tracking based on entry and exit instead of Bio-metric punch-in/out.
+e analysis in the above topics.
++91 99893 76385: Try to explore the ai being used in each sector
++91 99893 76385: Explore further like how they are benefiting exactly using AI
+Gaurav Poosarla Vit Bbs Batchmate: Sir could you once check the ppt on hill climbing search, some slides are not properly oriented and even after rotating the slide I am not able to read. It would be really helpful if you could change it.
++91 99893 76385: Choose rotate view option
+Gaurav Poosarla Vit Bbs Batchmate: I tried sir but for some slides it isn't working the content is not bounded in the slide, it moves out.
++91 99893 76385: View in full screen mode, CTRL+L
+Gaurav Poosarla Vit Bbs Batchmate: Okay sir
++91 99893 76385: Dear students, I have meeting now. please go through the CAT-1 syllabus and raise if you have any doubts.  Concentrate on all the three modules and also DA topic. This for morning class today
++91 99893 76385: If anybody submitted pdf format document for lab assessment-1 yesterday, please submit the word document through email immediately. Other platform submission not accepted. nagaraja.g@vit.ac.in
++91 99893 76385: Just suggestion
++91 73309 45676: It's AI powered personal assistant sir, like cortana for windows and siri for apple
+Divyesh Tripathi Prob And Stats: Maybe for Voice Commands.
+Siddharth Vit Bbs Batchmate: Assistant for helping in driving...
++91 99893 76385: Anything more than personal assistant?
+Siddharth Vit Bbs Batchmate: Like...lane changing... speeding....any warning..
++91 93483 43310: A/C temp control
++91 99893 76385: If only PA, then it's already there. False advertising
++91 76829 26742: Sir here ai means to assit drivers to keep the car in lane and maintain a safe distance from a car in front and cruise control etc
+Saliq Iet Vit: Also hyper advanced ai based safety assistance
+Divyesh Tripathi Prob And Stats: driver-assist functions like Adaptive Cruise Control, Forward Collision Warning, Automatic Emergency Braking, etc...
+Siddharth Vit Bbs Batchmate: Ooo....they may say we didn't mention that AI means artificial intelligence🤣🤣🤣
++91 99893 76385: Need to explore how AI helps for these tasks
++91 99893 76385: Can you demonstrate/ explain, how can AI helps in these tasks in the upcoming class. @919565556292
++91 99893 76385: Not urgent. After your preparation only
+Divyesh Tripathi Prob And Stats: By using camera and sensors at the front of the car.
++91 99893 76385: If you fix camera and sensors, sufficient? They work themselves?
++91 99893 76385: I don't want answer like question one answer in CAT1. I want practical scenario
+Divyesh Tripathi Prob And Stats: They definitely will require proper programming for this..
+Divyesh Tripathi Prob And Stats: Ok sir I'll try
+Divyesh Tripathi Prob And Stats: 👍🏻
++91 99893 76385: 🙏
++91 99893 76385: Thanks bro, but again CAT1 QUESTION ANSWER. I want in what way AI helps practically.
++91 99893 76385: Please take one task and demonstrate through example @918658322524
++91 99893 76385: Please come forward once you learned
++91 86583 22524: Sure sir !!
+Prathik Vit Bbs Batchmate: In the above mentioned car, The AI part of it is only implemented for the personal assistant feature not for the advanced driver assists system (ADAS). ADAS uses various chips called Systems on a chip(SOC), which connects the sensors embedded in the chassis of the car to actuators through interfaces and directly linked to the Electronic Control Unit(ECU). As it is mentioned in the pdf sent above, the ADAS is at autonomous driving level 2. AI only gets implemented in autonomous driving from level 3 onwards till level 5. 
+nt system that does use AI, uses Natural Language Processing and Natural Language Understanding, it would give replies mimicing a normal human. It can also have control of the interior features of the car for example, opening the sunroof, or switching the radio station or making a call.
+Aryaman Jr Research ACM: Thank you for sharing
+Aniket Vit Bbs Batchmate: Sir aren't you going to take the class today?
++91 99893 76385: Sorry. I thought it's at 3pm. Will compensate today's class later.
++91 99893 76385: Morning batch, I  will join soon
++91 99893 76385: for Q3, why D is not considered?
++91 99893 76385: or why only B and G considered? Please correct if I am wrong.
++91 99893 76385: I request others also verify this.
+Aniket Vit Bbs Batchmate: sir actually clicked the photos and later i realized that D is missing
+Aniket Vit Bbs Batchmate: I changed the value on sheet
++91 99893 76385: its ok. just I want to get clarity only.
+Aniket Vit Bbs Batchmate: Yes sir thank you
+Aniket Vit Bbs Batchmate: Is the rest fine sir?
++91 99893 76385: others also please make this to utilize for this type of discussion so that all benefit.
++91 99893 76385: can anybody solved SEND+MORE=MONEY using CSP? using FC? using AC-3?
+Aniket Vit Bbs Batchmate: Sir i will try and send
++91 93501 65343 changed the group description
++91 99893 76385: in Q2, H value please?
+Aniket Vit Bbs Batchmate: Red
+Aniket Vit Bbs Batchmate: I missed it by mistake
++91 99893 76385: Then all are fine.
+Aniket Vit Bbs Batchmate: ok sir
+Manas Vit Bbs Batchmate: Sir, Vtop is giving error while uploading docx file. Can we upload pdf instead?
+Aryaman Jr Research ACM: Yes sir, same here
++91 99893 76385: Fine
++91 99893 76385: Upload pdf. Send word on email
++91 99893 76385: Upload pdf and send word on email
++91 98501 84924: Sir if we're able to upload the word doc on vtop there is no need to mail it you as well right?
++91 99893 76385: Yes you are correct
++91 99893 76385: There should be five nodes cancelled. Please check this once Again
++91 70319 56789: Child node 7 will also be cancelled
+Aniket Vit Bbs Batchmate: i think 9 will be cancelled
+Aniket Vit Bbs Batchmate: i am rewriting the solution clearly
+Aniket Vit Bbs Batchmate: This is the final sir can you check now
++91 99893 76385: Answer is in ppt
+Aniket Vit Bbs Batchmate: It matches sir
+Aniket Vit Bbs Batchmate: This form is with regards to gathering the real time dataset for the lab assessment 4 (sentiment analysis). After getting enough responses I will share the dataset with everyone and it can be used as realtime dataset. Everyone is requested to fill the form seriously as this for the whole class.
+ fill the form 2 times with 1 positive review and 1 negative
+Aniket Vit Bbs Batchmate: Everyone can use this as the class data set
+Aniket Vit Bbs Batchmate: and use a standard dataset as per sir's instructions
+Aniket Vit Bbs Batchmate: for real time
+Gaurav Poosarla Vit Bbs Batchmate: We have to use this one for real time right?
+Aniket Vit Bbs Batchmate: no, as class dataset
+Gaurav Poosarla Vit Bbs Batchmate: See w have to do two parts
+Aniket Vit Bbs Batchmate: for real time do as per sir's instructions
+Gaurav Poosarla Vit Bbs Batchmate: No this itself is realtime
+Gaurav Poosarla Vit Bbs Batchmate: He gave two options
+Gaurav Poosarla Vit Bbs Batchmate: One is use this one or use twitter data
+Gaurav Poosarla Vit Bbs Batchmate: We have to do the textbook one on paper
+Gaurav Poosarla Vit Bbs Batchmate: And for real time either of the two
+Gaurav Poosarla Vit Bbs Batchmate: @919989376385 sir could you confirm once
++91 99893 76385: from Today's mint paper
++91 99893 76385: maybe useful for your research ideas
