@@ -4,7 +4,10 @@
 
 People get frustrated when reading longer text messages or group chats and would most probably skip it and go to the recent discussion which may relate to the texts sent earlier.
 Presenting to you, Summarizer. With the help of this application, one can easily get the summary of long text conversations in the form of a short paragraph . User needs to upload the transcript of the messages wait for the magic to happen. Once a user uploads the transcript , no matter how long it is, it will be converted to a short, clear and to the point paragraph. Now one can save time, read less and still stay updated.
-
+## Frameworks
+  -> Flask
+  -> Python
+  -> Transformers (NLP pretrained Model for making the summary)
 
 ## Steps
 
@@ -16,7 +19,7 @@ Presenting to you, Summarizer. With the help of this application, one can easily
 
 ### Bulleter
 
-Provide us with the text messages in the form of a file and we will only show you the important messages according to their relevance
+Provide us with the text messages in the form of a file and we will only show you the important messages according to their relevance. This feature is quite dynamic, dataset can be made for different types of clients. Rightnow the dataset focuses important event notifications of VIT. 
 
 ### Custom
 
