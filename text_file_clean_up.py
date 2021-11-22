@@ -1,5 +1,4 @@
 import re
-import os
 
 def clean_text_file(path):
     with open(path,'r', encoding="utf8") as f:
