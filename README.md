@@ -1,6 +1,6 @@
 # Summarizer
 
-<p align="center"><img  width="150" height="150" src="Asset1@2x.png"></p>
+<p align="center"><img  width="150" height="150" src="https://github.com/Arkajit-techie/summariser_api/blob/main/Asset%201@2x.png?raw=true"></p>
 
 People get frustrated when reading longer text messages or group chats and would most probably skip it and go to the recent discussion which may relate to the texts sent earlier.
 Presenting to you, Summarizer. With the help of this application, one can easily get the summary of long text conversations in the form of a short paragraph . User needs to upload the transcript of the messages wait for the magic to happen. Once a user uploads the transcript , no matter how long it is, it will be converted to a short, clear and to the point paragraph. Now one can save time, read less and still stay updated.
