@@ -1,3 +1,5 @@
+torch @ https://download.pytorch.org/whl/cpu/torch-1.6.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
+regex @ file:///C:/ci/regex_1629302316714/work
 Flask==1.1.2
 Flask-Admin==1.5.8
 Flask_Cors==3.0.10
