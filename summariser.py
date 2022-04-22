@@ -21,4 +21,4 @@ def summarise():
                 pass
     list_summary = summarizer(ARTICLE, max_length=200, min_length=10, do_sample=False, truncation=True)
     return list_summary[0]
-#summarise()
+summarise()
