@@ -1,12 +1,14 @@
 from operator import itemgetter
+import unicodedata
 import fitz
 
-# import re
 file=fitz.open(r'email_test_cases\test_02.pdf')
 
 
 class ExtractLiterature:
-    def fonts(self,doc, granularity=True):
+    def __init__(self,file) -> None:
+        self.file = file
+    def fonts(self,doc, granularity=False):
         """
         Extracts fonts and their usage in PDF documents.
         :param doc: PDF document to iterate through
@@ -35,6 +37,7 @@ class ExtractLiterature:
                                 styles[identifier] = {'size': s['size'], 'font': s['font']}
 
                             font_counts[identifier] = font_counts.get(identifier, 0) + 1  # count the fonts usage
+                print("Next Block...")
 
         font_counts = sorted(font_counts.items(), key=itemgetter(1), reverse=True)
 
@@ -90,12 +93,10 @@ class ExtractLiterature:
         previous_s = {}  # previous span
 
         for page in doc:
-            blocks = page.getText("dict")["blocks"]
+            blocks = page.get_text("dict")["blocks"]
             for b in blocks:  # iterate through the text blocks
                 if b['type'] == 0:  # this block contains text
-
                     # REMEMBER: multiple fonts and sizes are possible IN one block
-
                     block_string = ""  # text found in block
                     for l in b["lines"]:  # iterate through the text lines
                         for s in l["spans"]:  # iterate through the text spans
@@ -117,27 +118,25 @@ class ExtractLiterature:
                                             block_string += " " + s['text']
 
                                     else:
-                                        header_para.append(block_string)
+                                        clean_text = unicodedata.normalize("NFKD", block_string)
+                                        header_para.append(clean_text)
                                         block_string = size_tag[s['size']] + s['text']
 
                                     previous_s = s
 
                         # new block started, indicating with a pipe
                         block_string += "|"
-
-                    header_para.append(block_string)
+                    clean_text = unicodedata.normalize("NFKD", block_string)
+                    header_para.append(clean_text)
 
         return header_para
+    #calling this single method to extract the information
+    def extract(self):
+        font_count, style = self.fonts(self.file)
+        font_tags_list = self.font_tags(font_counts=font_count,styles=style)
+        result = self.headers_para(self.file, font_tags_list)
+        return result
 
 
-extract_obj = ExtractLiterature()
-a,b= extract_obj.fonts(file)
-# print("font counts --> ")
-# print(a)
-# print("font style")
-# print(b)
-c = extract_obj.font_tags(a,b)
-# print("font tags --> ")
-# print(c)
-result = extract_obj.headers_para(doc = file,size_tag = c)
-# print(result)
+extract_obj = ExtractLiterature(file=file)
+print(extract_obj.extract())
