@@ -1,21 +1,12 @@
 from operator import itemgetter
 import fitz
-# import re
-file=fitz.open('final_report.pdf')
-# for pageNumber,page in enumerate(file.pages(),start=1):
-#     text=page.get_text()
 
-#     txt=open(f'report_page_{pageNumber}.txt','a')
-#     txt.writelines(text)
-#     txt.close()
-# for pageNumber,page in enumerate(file.pages(),start=1):
-#     for imgNumber, img in enumerate(page.getImageList(),start=1):
-#         xref=img[0]
-#         pix=fitz.Pixmap(file,xref)
-#         pix.writePNG(f'image_Page{pageNumber}_{imgNumber}.png') 
+# import re
+file=fitz.open(r'email_test_cases\test_02.pdf')
+
 
 class ExtractLiterature:
-    def fonts(self,doc, granularity=False):
+    def fonts(self,doc, granularity=True):
         """
         Extracts fonts and their usage in PDF documents.
         :param doc: PDF document to iterate through
@@ -34,6 +25,7 @@ class ExtractLiterature:
                 if b['type'] == 0:  # block contains text
                     for l in b["lines"]:  # iterate through the text lines
                         for s in l["spans"]:  # iterate through the text spans
+                            print("lines detected --> {}".format(s['text']))
                             if granularity:
                                 identifier = "{0}{1}{2}_{3}".format(s['size'], s['flags'], s['font'], s['color'])
                                 styles[identifier] = {'size': s['size'], 'flags': s['flags'], 'font': s['font'],
@@ -66,7 +58,8 @@ class ExtractLiterature:
         # sorting the font sizes high to low, so that we can append the right integer to each tag 
         font_sizes = []
         for (font_size, count) in font_counts:
-            font_sizes.append(float(font_size))
+            f_size = styles[font_size]['size']
+            font_sizes.append(float(f_size))
         font_sizes.sort(reverse=True)
 
         # aggregating the tags for each font size
@@ -139,6 +132,12 @@ class ExtractLiterature:
 
 extract_obj = ExtractLiterature()
 a,b= extract_obj.fonts(file)
+# print("font counts --> ")
+# print(a)
+# print("font style")
+# print(b)
 c = extract_obj.font_tags(a,b)
-print(c)
-print(extract_obj.headers_para(doc = file,size_tag = c))
+# print("font tags --> ")
+# print(c)
+result = extract_obj.headers_para(doc = file,size_tag = c)
+# print(result)
