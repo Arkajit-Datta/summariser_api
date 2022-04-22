@@ -1,9 +1,8 @@
 from operator import itemgetter
 import unicodedata
-import fitz
 import re
 
-file=fitz.open(r'email_test_cases\test_02.pdf')
+# file=fitz.open(r'email_test_cases\test_02.pdf')
 
 
 class ExtractLiterature:
@@ -139,6 +138,7 @@ class ExtractLiterature:
 
     #This Method will extract the paragraphs from the 
     def extract_paragraphs(self):
+        final_para = ""
         extracted_info = self.extract()
         header_reg = re.compile(r"<(p|s|h)[1-9]?>")
         for para in extracted_info:
@@ -147,6 +147,7 @@ class ExtractLiterature:
                 if header[0] == "<p>": #then its a paragraph
                     para = re.sub(r"<p>","",para)
                     new_para = re.sub(r"[\|]","",para)
-                    print(new_para)
-extract_obj = ExtractLiterature(file=file)
-print(extract_obj.extract_paragraphs())
+                    final_para += new_para
+        return final_para
+# extract_obj = ExtractLiterature(file=file)
+# print(extract_obj.extract_paragraphs())
