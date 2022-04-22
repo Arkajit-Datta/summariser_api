@@ -1,6 +1,7 @@
 from operator import itemgetter
 import unicodedata
 import fitz
+import re
 
 file=fitz.open(r'email_test_cases\test_02.pdf')
 
@@ -130,13 +131,22 @@ class ExtractLiterature:
                     header_para.append(clean_text)
 
         return header_para
-    #calling this single method to extract the information
+    #calling this single method to extract the information from the PDF file
     def extract(self):
         font_count, style = self.fonts(self.file)
         font_tags_list = self.font_tags(font_counts=font_count,styles=style)
-        result = self.headers_para(self.file, font_tags_list)
-        return result
+        return self.headers_para(self.file, font_tags_list)
 
-
+    #This Method will extract the paragraphs from the 
+    def extract_paragraphs(self):
+        extracted_info = self.extract()
+        header_reg = re.compile(r"<(p|s|h)[1-9]?>")
+        for para in extracted_info:
+            header = header_reg.match(para)
+            if header is not None:
+                if header[0] == "<p>": #then its a paragraph
+                    para = re.sub(r"<p>","",para)
+                    new_para = re.sub(r"[\|]","",para)
+                    print(new_para)
 extract_obj = ExtractLiterature(file=file)
-print(extract_obj.extract())
+print(extract_obj.extract_paragraphs())
